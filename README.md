@@ -43,3 +43,11 @@ For CI/CD and source control within your landing zone:
 - **Modular Design**: Ensure each module is reusable with customizable parameters.
 - **Documentation**: Provide thorough documentation for each module, including inputs, outputs, and usage examples.
 - **Versioning**: Use versioning for modules, especially if stored in a remote registry, to manage updates and compatibility.
+
+
+### Logic
+
+- module folder defines different resources from different aws resources
+- root terragrunt.hcl defines commond resource such as provider, backend..
+- terrgrunt-resource folder place the function that calls the actual parameter from items folder
+- items folder keeps the actual variables of each instance
